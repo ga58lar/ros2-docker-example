@@ -2,4 +2,6 @@
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
-docker build -f $SCRIPT_DIR/../Dockerfile -t kiss-icp:latest $SCRIPT_DIR/..
+cd $SCRIPT_DIR/.. && git clone -b main https://github.com/PRBonn/kiss-icp.git
+
+docker build -f $SCRIPT_DIR/../Dockerfile -t ros2-docker-example:latest $SCRIPT_DIR/..

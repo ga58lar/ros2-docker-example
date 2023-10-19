@@ -1,0 +1,5 @@
+# Ignore KISS-ICP
+kiss-icp
+
+# Ignore the extracted data
+data

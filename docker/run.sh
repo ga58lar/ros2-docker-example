@@ -10,6 +10,6 @@ docker run --rm -it \
     -v /dev/shm:/dev/shm \
     -v $SCRIPT_DIR/../data:/data \
     -e ROS_DOMAIN_ID=77 \
-    kiss-icp:latest \
+    ros2-docker-example:latest \
     bash -c "ros2 launch kiss_icp odometry.launch.py bagfile:=/data/ topic:=/luminar_front_points"
 xhost -
